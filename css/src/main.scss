@@ -1,0 +1,78 @@
+
+$orange: #e7ac5a;
+
+@font-face {
+    font-family: 'Better Times';
+    src: url('fonts/better-times.woff2') format('woff2'),
+        url('fonts/better-times.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import "reset";
+@import "mixins";
+@import "base";
+
+.container {
+    min-width: 600px;
+    max-width: 1150px;
+    margin: 0 auto 30px;
+}
+
+.header {
+    padding: 15px 15px 0;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+
+    table {
+        border: 4px solid black;
+        width: 100%;
+
+        tr {
+            td {
+                vertical-align: top;
+                border: 4px solid black;
+                padding: 20px;
+                width: 24%;
+            }
+
+            &.header-row td {
+                vertical-align: middle;
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.3em;
+            }
+        }
+    }
+
+    .score, .field {
+        border: 8px solid black;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 5px auto;
+        font-size: 2em;
+        line-height: 80px;
+        font-family: "Better Times", sans-serif;
+        text-align: center;
+    }
+
+    .score-col {
+        width: 10%;
+        .score {
+            line-height: 1.1em;
+        }
+    }
+
+    .label-col {
+        width: 18%;
+    }
+}
+
+.footer {
+    padding: 20px;
+}

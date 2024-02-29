@@ -1,0 +1,2 @@
+$(document).ready(function(){function n(){$("tr.calc-row").each(function(){var n=0;$(this).find("td .field").each(function(){var i=parseInt($(this).val());isNaN(i)&&(i=0),n+=i}),$(this).find(".score").html(n)})}$(".field").on("keyup",function(){var i=5<(i=$(this).val().replace(/[^1-5]/g,""))?5:i;$(this).val(i),n()}),n()});
+//# sourceMappingURL=main.js.map
