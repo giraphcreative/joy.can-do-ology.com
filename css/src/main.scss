@@ -10,6 +10,8 @@ $orange: #e7ac5a;
     font-display: swap;
 }
 
+@import url( 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap' );
+
 @import "reset";
 @import "mixins";
 @import "base";
@@ -95,4 +97,17 @@ $orange: #e7ac5a;
 
 .footer {
     padding: 20px;
+}
+
+.intro {
+    padding: 10px 30px;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-size: .6em;
+    line-height: 1.5em;
+    font-weight: 400;
+
+    strong {
+        font-weight: 600;
+    }
 }
